@@ -1,0 +1,179 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typeLine {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 157, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 157, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Apply animations to elements */
+.hero-section {
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.hero-subtitle {
+  animation: slideInFromLeft 1s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-description {
+  animation: slideInFromLeft 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.hero-buttons {
+  animation: slideInFromLeft 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.hero-image {
+  animation: slideInFromRight 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.profile-image-container {
+  animation: pulse 2s infinite;
+}
+
+.section-header {
+  animation: slideInFromBottom 1s ease-out;
+}
+
+.skill-card,
+.project-card,
+.timeline-item,
+.contact-form-container,
+.contact-info-container {
+  opacity: 0;
+}
+
+/* These animations will be triggered by JavaScript on scroll */
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+  animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

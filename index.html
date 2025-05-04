@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Al Mamun | Software Engineer</title>
+  <meta name="description" content="Portfolio of Abdullah Al Mamun, a Software Engineer specializing in Backend, AI, and Cloud Technologies">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@latest/dist/umd/lucide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+</head>
+<body class="dark-mode">
+  <!-- Terminal-like loading screen -->
+  <div id="loading-screen">
+    <div class="terminal">
+      <div class="terminal-header">
+        <span class="terminal-title flex items-center gap-2">
+          <img src="./images/archlinux-icon.svg" alt="" style="height: 20px;">
+          system_init.sh 
+        </span>                    
+        <div class="terminal-buttons">
+          <span class="terminal-button"></span>
+          <span class="terminal-button"></span>
+          <span class="terminal-button"></span>
+        </div>
+      </div>
+      <div class="terminal-body">
+        <div class="terminal-line">Initializing system...</div>
+        <div class="terminal-line">Loading profile data...</div>
+        <div class="terminal-line">Establishing secure connection...</div>
+        <div class="terminal-line">Rendering interface...</div>
+        <div class="terminal-line success">System ready. Access granted.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">root<span class="accent">@</span>RiFat</a>
+        
+        <nav class="desktop-nav flex justify-center items-center mt-5">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+      <div class="container">
+        <nav>
+          <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="command-prompt">
+              <span class="prompt-symbol">$</span>
+              <span class="typing-text">whoami</span>
+            </div>
+            <h1 class="hero-title">Abdullah Al Mamun</h1>
+            <h2 class="hero-subtitle">
+              
+              <span class="block">Specializing in Software Engineering, AI, and Cloud Technologies</span>
+            </h2>
+            <!-- <p class="hero-description">
+              I am a Backend Developer skilled in Python, Django, JavaScript, Go, and Cloud technologies, with a focus on
+              scalable web applications and cloud-based architectures.
+            </p> -->
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                Contact Me <i data-lucide="move-right" class="icon"></i>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                View Projects
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-image-container">
+              <img src="https://abdullah-al-mamun-rifat.vercel.app/rifat.png" alt="Abdullah Al Mamun" class="profile-image">
+              <div class="image-glitch-effect"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">cat about.md</span>
+          </div>
+          <!-- <h2 class="section-title">About Me</h2> -->
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            With experience in AWS, DevOps, microservices, RESTful APIs, and AI integration, I focus on delivering
+            efficient, scalable, and high-performance systems through innovative solutions.
+          </p>
+          <p class="about-text">
+            My passion lies in building robust backend systems that power modern applications. I enjoy solving complex
+            problems and continuously learning new technologies to stay at the forefront of software engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">ls -la skills/</span>
+          </div>
+          <!-- <h2 class="section-title">Skills</h2> -->
+        </div>
+        <div class="grid gird-cols-1 md:grid-cols-3 gap-3">
+          <!-- <div class="skill-card">
+            <div class="skill-header">
+              <i data-lucide="code" class="skill-icon"></i>
+              <h3 class="skill-title">Frontend Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">Vue.js</li>
+              <li class="skill-item">Nuxt.js</li>
+              <li class="skill-item">Tailwind CSS</li>
+              <li class="skill-item">Vite</li>
+              <li class="skill-item">HTML5 & CSS3</li>
+            </ul>
+          </div> -->
+        
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-lucide="server" class="skill-icon"></i>
+              <h3 class="skill-title">Software Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">Python</li>
+              <li class="skill-item">Go (Golang)</li>
+              <li class="skill-item">Django</li>
+              <li class="skill-item">FastAPI</li>
+              <li class="skill-item">Celery</li>
+              <li class="skill-item">PostgreSQL</li>
+              <li class="skill-item">RESTful APIs</li>
+              <li class="skill-item">Microservices</li>
+            </ul>
+          </div>
+        
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-lucide="cloud" class="skill-icon"></i>
+              <h3 class="skill-title">Cloud & DevOps</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">AWS (EC2, S3, Lambda, RDS)</li>
+              <li class="skill-item">Docker</li>
+              <li class="skill-item">Nginx & Gunicorn</li>
+              <li class="skill-item">CI/CD (GitHub Actions, Jenkins)</li>
+            </ul>
+          </div>
+        
+          <div class="skill-card">
+            <div class="skill-header">
+              <i data-lucide="lightbulb" class="skill-icon"></i>
+              <h3 class="skill-title">Other Skills</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">Scraping & Automation</li>
+              <li class="skill-item">Cybersecurity & Pentesting</li>
+              <li class="skill-item">NLP & LLM Integration</li>
+              <li class="skill-item">Vector DB (FAISS, Qadrant)</li>
+              <li class="skill-item">Agentic AI Systems</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">git log --author="Abdullah"</span>
+          </div>
+          <!-- <h2 class="section-title">Work Experience</h2> -->
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-company">
+                  <i data-lucide="briefcase" class="timeline-icon"></i>
+                  <h3 class="timeline-company-name">Visionary Tech Solution</h3>
+                </div>
+                <div class="timeline-period">
+                  <i data-lucide="calendar" class="timeline-icon-small"></i>
+                  <span class="timeline-date">07/2023 - 02/2024</span>
+                </div>
+              </div>
+              <h4 class="timeline-title">Backend Developer</h4>
+              <ul class="timeline-responsibilities">
+                <li>Developing scalable web applications using Python and Django.</li>
+                <li>Building custom tools and software solutions for clients.</li>
+                <li>Implementing RESTful APIs and integrating with third-party services.</li>
+                <li>Optimizing database queries and improving application performance.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-company">
+                  <i data-lucide="briefcase" class="timeline-icon"></i>
+                  <h3 class="timeline-company-name">Xemiron</h3>
+                </div>
+                <div class="timeline-period">
+                  <i data-lucide="calendar" class="timeline-icon-small"></i>
+                  <span class="timeline-date">04/2023 - 06/2023</span>
+                </div>
+              </div>
+              <h4 class="timeline-title">Junior Django Developer</h4>
+              <ul class="timeline-responsibilities">
+                <li>Successfully completed multiple projects, including GPT-based resume analysis and web automation tools.</li>
+                <li>Collaborated with senior developers to implement new features and fix bugs.</li>
+                <li>Participated in code reviews and improved coding standards.</li>
+                <li>Gained experience with AI integration in web applications.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">find . -name "*.project" | sort</span>
+          </div>
+          <!-- <h2 class="section-title">Projects</h2> -->
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Finch</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Finch on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit Finch website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              E-commerce platform integrated with a robust POS system for seamless sales management.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">NixaGlobal</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View NixaGlobal on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit NixaGlobal website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              B2B platform for student visa agencies.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">RESTful API</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Tripadvisor</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Tripadvisor on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit Tripadvisor website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              Smart travel recommendation system using natural language processing.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Machine Learning</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Cparobust</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Cparobust on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit Cparobust website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              Ad network platform for content creators.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">API Integration</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">London Seru</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View London Seru on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit London Seru website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              Dynamic and user-friendly quiz system.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Document Analyzer</h3>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Document Analyzer on GitHub">
+                  <i data-lucide="github" class="project-icon"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="Visit Document Analyzer website">
+                  <i data-lucide="external-link" class="project-icon"></i>
+                </a>
+              </div>
+            </div>
+            <p class="project-description">
+              Intelligent document processing tool.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Spring Boot</span>
+              <span class="project-tag">AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">grep -r "education" ./profile</span>
+          </div>
+          <!-- <h2 class="section-title">Education</h2> -->
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-company">
+                  <i data-lucide="graduation-cap" class="timeline-icon"></i>
+                  <h3 class="timeline-company-name">Daffodil International University</h3>
+                </div>
+                <div class="timeline-period">
+                  <i data-lucide="calendar" class="timeline-icon-small"></i>
+                  <span class="timeline-date">2022 - 2025</span>
+                </div>
+              </div>
+              <h4 class="timeline-title">BSc in Software Engineering</h4>
+              <p class="timeline-description">
+                Focusing on software development methodologies, algorithms, and modern programming paradigms.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-company">
+                  <i data-lucide="graduation-cap" class="timeline-icon"></i>
+                  <h3 class="timeline-company-name">Govt. Shahid Suhrawardy College</h3>
+                </div>
+                <div class="timeline-period">
+                  <i data-lucide="calendar" class="timeline-icon-small"></i>
+                  <span class="timeline-date">2019 - 2020</span>
+                </div>
+              </div>
+              <h4 class="timeline-title">Higher Secondary Certificate</h4>
+              <p class="timeline-description">
+                Completed with a focus on science and mathematics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="command-prompt">
+            <span class="prompt-symbol">$</span>
+            <span class="command-text">ssh root@rifat</span>
+          </div>
+          <!-- <h2 class="section-title">Contact Me</h2> -->
+        </div>
+        <div class="contact-grid">
+          <!-- <div class="contact-form-container">
+            <h3 class="contact-subtitle">Get In Touch</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required class="form-input">
+                <div class="input-focus-effect"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required class="form-input">
+                <div class="input-focus-effect"></div>
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required class="form-textarea"></textarea>
+                <div class="input-focus-effect"></div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <span class="btn-text">Send Message</span>
+                <i data-lucide="send" class="btn-icon"></i>
+              </button>
+            </form>
+          </div> -->
+          
+          <div class="contact-info-container">
+            <div class="">              
+              <div class="">
+                <h4 class="profiles-title">Profiles</h4>
+                <div class="profiles-grid">
+                  <a href="https://github.com/rifat977" target="_blank" rel="noopener noreferrer" class="profile-link">
+                    <i data-lucide="github" class="profile-icon"></i>
+                    <span class="profile-name">GitHub</span>
+                    <span class="profile-username">rifat977</span>
+                  </a>
+                  <a href="https://leetcode.com/ri_fat" target="_blank" rel="noopener noreferrer" class="profile-link">
+                    <i data-lucide="code" class="profile-icon"></i>
+                    <span class="profile-name">LeetCode</span>
+                    <span class="profile-username">ri_fat</span>
+                  </a>
+                  <a href="https://kaggle.com/rifat936" target="_blank" rel="noopener noreferrer" class="profile-link">
+                    <i data-lucide="code" class="profile-icon"></i>
+                    <span class="profile-name">Kaggle</span>
+                    <span class="profile-username">rifat936</span>
+                  </a>
+                  <a href="https://codeforces.com/profile/rifat977" target="_blank" rel="noopener noreferrer" class="profile-link">
+                    <i data-lucide="code" class="profile-icon"></i>
+                    <span class="profile-name">Codeforces</span>
+                    <span class="profile-username">rifat977</span>
+                  </a>
+                  <a href="https://dev.to/rifat977" target="_blank" rel="noopener noreferrer" class="profile-link">
+                    <i data-lucide="code" class="profile-icon"></i>
+                    <span class="profile-name">Dev.to</span>
+                    <span class="profile-username">rifat977</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <h3 class="contact-subtitle">Connect With Me</h3>
+            <div class="contact-item">
+              <i data-lucide="mail" class="contact-icon"></i>
+              <a href="mailto:contact@abdullahmamun.com" class="contact-link">dev.abdullah.mamun@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i data-lucide="linkedin" class="contact-icon"></i>
+              <a href="#" class="contact-link">linkedin.com/in/rifat977</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copyright">
+          <p>&copy; <span id="current-year"></span> Abdullah Al Mamun. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/rifat977" class="social-link" aria-label="GitHub">
+            <i data-lucide="github" class="social-icon"></i>
+          </a>
+          <a href="linkedin.com/in/rifat977" class="social-link" aria-label="LinkedIn">
+            <i data-lucide="linkedin" class="social-icon"></i>
+          </a>
+          <a href="mailto:dev.abdullah.mamun@gmail.com" class="social-link" aria-label="Email">
+            <i data-lucide="mail" class="social-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
